@@ -39,3 +39,11 @@ function recoverTemp() {
 
 }
 setInterval(recoverTemp, 3000)
+
+//Change city
+let btnChange = document.getElementById('changer');
+btnChange.addEventListener('click', () => {
+    ville = prompt('Choissez une ville ?');
+    villeHTML.textContent = ville;
+    return ville;
+});
